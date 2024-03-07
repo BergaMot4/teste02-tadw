@@ -1,40 +1,41 @@
 function validar() {
-    let nome = document.getElementById("nome").value;
-    let email = document.getElementById("email").value;
-    let data = document.getElementById("data").value;
-    let titulo = document.getElementById("titulo").value;
-    let descricao = document.getElementById("descricao").value;
+    const nome = document.getElementById("nome");
+    const email = document.getElementById("email");
+    const categoria = document.getElementById("data");
+    const titulo = document.getElementById("titulo");
+    const descricao = document.getElementById("descricao");
 
 
-    if (nome == "") {
+    if (nome.value == "") {
         document.getElementById("nome").focus();
-        document.getElementById("avisos").innerHTML = "Campo nome não pode ficar em branco!";
+        alert("Não deixe o campo nome vazio.");
         return false;
     }
 
-    if (email == "") {
+    if (email.value == "") {
         document.getElementById("email").focus();
-        document.getElementById("avisos").innerHTML = "Campo e-mail não pode ficar em branco!";
+        alert("Não deixe o campo e-mail vazio.");
         return false;
     }
 
-    if (data == "") {
-        document.getElementById("data").focus();
-        document.getElementById("avisos").innerHTML = "Campo data não pode ficar em branco!";
+    if (categoria.value == "") {
+        document.getElementById("categoria").focus();
+        alert("Não deixe o campo categoria vazio.");
         return false;
     }
 
-    if (titulo == "") {
+    if (titulo.value == "") {
         document.getElementById("titulo").focus();
-        document.getElementById("avisos").innerHTML = "Campo título não pode ficar em branco!";
+        alert("Não deixe o campo título vazio.");
         return false;
     }
 
-    if (descricao == "") {
+    if (descricao.value == "") {
         document.getElementById("descricao").focus();
-        document.getElementById("avisos").innerHTML = "Campo descrição não pode ficar em branco!";
+        alert("Não deixe o campo descrição vazio.");
         return false;
     }
     
-alert("enviou os dados");
 }
+
+alert("Sucesso");

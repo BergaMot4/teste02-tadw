@@ -4,23 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link src="sheetstyle" href="css/style.css">
     <script src="js/script.js"></script>
-    <link href="sheetstyle" src="css/style.css">
 </head>
 <body>
-    <form onsubmit="return validar()">
-        <h3>Nome:</h3>
-        <input type="text" id="nome">
-        <h3>E-mail:</h3>
-        <input type="email" id="email">
-        <h3>Data:</h3>
-        <input type="date" id="data">
-        <h3>Título:</h3>
-        <input type="text" id="titulo">
-        <h3>Descrição:</h3>
-        <input type="text" id="descricao">
+    <div id="caixa">
+        <form onsubmit="return validar()">
+            <h3>Nome:</h3>
+            <input type="text" id="nome">
 
-        <input type="submit" id="Salvar">
-    </form>
+            <h3>E-mail:</h3>
+            <input type="email" id="email">
+
+            <h3>Categoria:</h3>
+            <select id="categoria">
+                <option>Urgente</option>
+                <option>Importante</option>
+                <option>Tranquilo</option>
+            </select>
+
+            <h3>Título:</h3>
+            <input type="text" id="titulo">
+            
+            <h3>Descrição:</h3>
+            <input type="text" id="descricao">
+
+            <input type="submit" id="Salvar">
+        </form>
+    </div> 
 </body>
 </html>

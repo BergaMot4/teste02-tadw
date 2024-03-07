@@ -1,7 +1,10 @@
 function validar() {
+    console.log("teste");
+
+
     const nome = document.getElementById("nome");
     const email = document.getElementById("email");
-    const categoria = document.getElementById("data");
+    const categoria = document.getElementById("categoria");
     const titulo = document.getElementById("titulo");
     const descricao = document.getElementById("descricao");
 
@@ -35,7 +38,7 @@ function validar() {
         alert("Não deixe o campo descrição vazio.");
         return false;
     }
-    
+
+    alert("Sucesso");    
 }
 
-alert("Sucesso");
